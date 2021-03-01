@@ -20,21 +20,66 @@ body {
     position: relative;
 }
 
+nav {
+    margin: -30px auto;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
 .container ul{
-    width: 1000px;
-    padding: 30px 30px;
+    width: auto;
+    padding: 20px 0;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style-type: none;
+    position: sticky;
 }
 .container ul li a {
-    padding: 20px 45px;
-    background-color: darkgray;
+    padding: 20px 25px;
+    background-color: #333;
     text-decoration: none;
-    color: #fff;
+    color: #F1F1F1;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
+
+.container ul li:first-of-type {
+    a:hover {
+        padding-left: 22px;
+        border-left: #CED2CC solid 3px;
+    }
+}
+
+.container ul li:last-of-type {
+    a:hover {
+        padding-right: 22px;
+        border-right: #CED2CC solid 3px;
+    }
+}
+
 .container ul li a:hover {
     background-color: transparent;
-    color: #c72926;
+    color: #fa3935;
+    border-bottom: #CED2CC solid 3px;
+}
+
+div h1.hero-content {
+    position: absolute;
+    color: white;
+    top: 28%;
+    left: 45%;
+    font-size: 60px;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, transparent , #4f6cd6);
+
+    height: 100vh;
+    width: 70%;
+    top: 0;
+    left: 30%;
+
+    position: absolute;
 }
