@@ -1,0 +1,46 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.bg {
+  background-image: url("/images/landing-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container ul {
+  width: 1000px;
+  padding: 30px 30px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.container ul li a {
+  padding: 20px 45px;
+  background-color: darkgray;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container ul li a:hover {
+  background-color: transparent;
+  color: #c72926;
+}
+/*# sourceMappingURL=main.css.map */
