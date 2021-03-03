@@ -8,6 +8,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  color: white;
+  background: #fafafa;
 }
 
 .bg {
@@ -67,21 +69,107 @@ nav {
   border-bottom: #CED2CC solid 3px;
 }
 
-div h1.hero-content {
+.hero-content {
   position: absolute;
+  opacity: 0;
   color: white;
   top: 28%;
   left: 45%;
-  font-size: 60px;
+  font-size: 72px;
+  -webkit-animation: slide 2s 1.2s;
+          animation: slide 2s 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  color: #fa3935;
+  text-decoration: underline;
+  margin: 100px auto 10px auto;
+}
+
+.frame-container {
+  position: relative;
+  margin: 0 auto;
+  top: 100%;
+  width: 78%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.tour-dates {
+  height: 315px;
+  width: 100%;
+  margin-top: -124px;
+  margin-right: -40px;
+  overflow: hidden;
+}
+
+.tour-link {
+  border: none;
+  background: #fa3935;
+  width: 200px;
+  height: 50px;
+  margin: 50px auto;
+}
+
+.tour-link a {
+  display: inline-block;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  height: inherit;
+  width: inherit;
+}
+
+.tour-link:hover {
+  cursor: pointer;
+  background: grey;
 }
 
 .gradient {
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#4f6cd6));
   background-image: linear-gradient(to right, transparent, #4f6cd6);
+  z-index: 0;
   height: 100vh;
   width: 70%;
   top: 0;
   left: 30%;
   position: absolute;
+}
+
+div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    left: 38%;
+  }
+  to {
+    opacity: 1;
+    left: 46%;
+  }
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    left: 38%;
+  }
+  to {
+    opacity: 1;
+    left: 46%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
