@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: white;
-  background: #fafafa;
+  background-color: darkgray;
 }
 
 .bg {
@@ -99,6 +99,16 @@ h2 {
   overflow: hidden;
 }
 
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .tour-dates {
   height: 315px;
   width: 100%;
@@ -107,15 +117,14 @@ h2 {
   overflow: hidden;
 }
 
-.tour-link {
+.btn {
   border: none;
   background: #fa3935;
   width: 200px;
   height: 50px;
-  margin: 50px auto;
 }
 
-.tour-link a {
+.btn a {
   display: inline-block;
   padding-top: 10px;
   text-decoration: none;
@@ -125,9 +134,17 @@ h2 {
   width: inherit;
 }
 
-.tour-link:hover {
+.btn:hover {
   cursor: pointer;
-  background: grey;
+  background: firebrick;
+}
+
+.btn:last-of-type {
+  margin-bottom: 100px;
+}
+
+.tour-link {
+  margin: 50px auto 250px auto;
 }
 
 .gradient {
@@ -149,6 +166,39 @@ div.container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#active-img {
+  margin: 0 auto;
+  height: 50%;
+  min-height: 400px;
+  width: 50%;
+  min-width: 600px;
+}
+
+.photo-credit {
+  margin: 10px 0 120px 0;
+  color: #fa3935;
+}
+
+.github-icon {
+  height: 32px;
 }
 
 @-webkit-keyframes slide {
