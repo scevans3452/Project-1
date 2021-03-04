@@ -39,7 +39,7 @@ nav {
     position: sticky;
 }
 
-.container ul li a {
+.nav {
     padding: 20px 25px;
     background-color: #333;
     text-decoration: none;
@@ -48,21 +48,21 @@ nav {
     letter-spacing: 3px;
 }
 
-.container ul li:first-of-type {
+.container > ul li:first-of-type {
     a:hover {
         padding-left: 22px;
         border-left: #CED2CC solid 3px;
     }
 }
 
-.container ul li:last-of-type {
+.container > ul li:last-of-type {
     a:hover {
         padding-right: 22px;
         border-right: #CED2CC solid 3px;
     }
 }
 
-.container ul li a:hover {
+.nav:hover {
     background-color: transparent;
     color: #fa3935;
     border-bottom: #CED2CC solid 3px;
@@ -179,14 +179,26 @@ div.container {
     color: #fa3935;
 }
 
+.git-link {
+    background-color: darkgray;
+    fill: black;
+}
+.git-link:hover {
+    fill: #ff5100;
+    
+  }
+
 .github-icon {
     height: 32px;
+    width: 32px;
+    //background-color: #fa3935;
+    //border-radius: 50%;
 }
 
 @keyframes slide {
     from {
         opacity: 0;
-        left: 38%;
+        left: 39%;
     }
     to {
         opacity: 1;
