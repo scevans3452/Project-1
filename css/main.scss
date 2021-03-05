@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +72,7 @@ nav ul li:last-of-type {
     top: 28%;
     left: 45%;
     font-size: 72px;
-    animation: slide 2s 1.2s;
+    animation: slide-right 2s 1.2s;
     animation-fill-mode: forwards; // keeps text visible after slide-in.
 }
 h2 {
@@ -114,7 +114,6 @@ h2 {
 }
 
 .footer-text {
-    padding: 8px 0;
     display: inline-block;
     justify-self: center;
     align-self: center;
@@ -144,8 +143,8 @@ a.footer-text:hover {
     background: firebrick;
 }
 
-.btn:last-of-type {
-    margin-bottom: 100px;
+.to-top {
+    margin: 50px 0;
 }
 
 .tour-link {
@@ -184,13 +183,15 @@ div.container {
 }
 
 .photo-credit {
-    margin: 10px 0 120px 0;
+    margin-top: 10px;
     color: #fa3935;
 }
 
 .git-link {
     background-color: inherit;
     fill: black;
+    width: 32px;
+    margin: 0 auto;
 }
 
 .git-link:hover {
@@ -207,12 +208,28 @@ footer {
 
 .inner-foot {
     width: 20%;
+    height: inherit;
 }
 
 .inner-foot ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    height: inherit;
+    li {
+        width: 33%;
+        justify-content: center;
+        list-style-type: none;
+        div {
+            width: auto;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+           // height: inherit;
+        }
+    }
 }
 
 .github-icon {
@@ -222,7 +239,7 @@ footer {
     //border-radius: 50%;
 }
 
-@keyframes slide {
+@keyframes slide-right {
     from {
         opacity: 0;
         left: 39%;
@@ -230,6 +247,17 @@ footer {
     to {
         opacity: 1;
         left: 46%;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        left: 62%;
+    }
+    to {
+        opacity: 1;
+        left: 55%;
     }
 }
 
@@ -242,4 +270,14 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.subtitle {
+    position: absolute;
+    opacity: 0;
+    top: 40%;
+    left: 55%;
+    color: #fa3935;
+    animation: slide-left 1.8s 1.7s;
+    animation-fill-mode: forwards;
 }
