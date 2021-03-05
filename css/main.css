@@ -284,4 +284,13 @@ footer {
     left: 46%;
   }
 }
+
+.bg-discography {
+  background-image: url("/images/discography-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 /*# sourceMappingURL=main.css.map */

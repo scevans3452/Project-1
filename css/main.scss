@@ -232,3 +232,14 @@ footer {
         left: 46%;
     }
 }
+
+// DISCOGRAPHY STYLES
+
+.bg-discography {
+    background-image: url('/images/discography-bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
