@@ -29,16 +29,13 @@ nav {
   z-index: 99;
 }
 
-.container ul {
+nav ul {
   width: auto;
   padding: 20px 0;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style-type: none;
   position: -webkit-sticky;
   position: sticky;
@@ -53,12 +50,12 @@ nav {
   letter-spacing: 3px;
 }
 
-.container > ul li:first-of-type a:hover {
+nav ul li:first-of-type a:hover {
   padding-left: 22px;
   border-left: #CED2CC solid 3px;
 }
 
-.container > ul li:last-of-type a:hover {
+nav ul li:last-of-type a:hover {
   padding-right: 22px;
   border-right: #CED2CC solid 3px;
 }
@@ -117,6 +114,31 @@ h2 {
   overflow: hidden;
 }
 
+.black {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.grey {
+  color: gray;
+  text-decoration: underline;
+}
+
+.footer-text {
+  padding: 8px 0;
+  display: inline-block;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+a.footer-text:hover {
+  color: #ff5100;
+}
+
 .btn {
   border: none;
   background: #fa3935;
@@ -127,7 +149,6 @@ h2 {
 .btn a {
   display: inline-block;
   padding-top: 10px;
-  text-decoration: none;
   font-size: 1.4rem;
   color: white;
   height: inherit;
@@ -198,12 +219,43 @@ div.container {
 }
 
 .git-link {
-  background-color: darkgray;
+  background-color: inherit;
   fill: black;
 }
 
 .git-link:hover {
   fill: #ff5100;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  height: 50px;
+}
+
+.inner-foot {
+  width: 20%;
+}
+
+.inner-foot ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .github-icon {

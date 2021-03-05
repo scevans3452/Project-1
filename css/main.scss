@@ -29,12 +29,12 @@ nav {
     z-index: 99;
 }
 
-.container ul{
+nav ul{
     width: auto;
     padding: 20px 0;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    //justify-content: center;
     list-style-type: none;
     position: sticky;
 }
@@ -48,26 +48,23 @@ nav {
     letter-spacing: 3px;
 }
 
-.container > ul li:first-of-type {
+nav ul li:first-of-type {
     a:hover {
         padding-left: 22px;
         border-left: #CED2CC solid 3px;
     }
 }
-
-.container > ul li:last-of-type {
+nav ul li:last-of-type {
     a:hover {
         padding-right: 22px;
         border-right: #CED2CC solid 3px;
     }
 }
-
 .nav:hover {
     background-color: transparent;
     color: #fa3935;
     border-bottom: #CED2CC solid 3px;
 }
-
 .hero-content {
     position: absolute;
     opacity: 0;
@@ -78,7 +75,6 @@ nav {
     animation: slide 2s 1.2s;
     animation-fill-mode: forwards; // keeps text visible after slide-in.
 }
-
 h2 {
     display: block;
     text-align: center;
@@ -86,38 +82,52 @@ h2 {
     text-decoration: underline;
     margin: 100px auto 10px auto;
 }
-
 .frame-container {
     position: relative;
-    //background: yellow;
     margin: 0 auto;
     top: 100%;
-    //height: 500px;
     width: 78%;
     z-index: 2;
     overflow: hidden;
 }
-
 .middle {
     display: flex;
     flex-direction: column;
 }
-
 .tour-dates {
-    //border: 1px solid red;
     height: 315px;
     width: 100%;
     margin-top: -124px;
     margin-right: -40px;
-    //margin-bottom: -40px;
     overflow: hidden;
+}
+
+.black {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.grey {
+    color: gray;
+    text-decoration: underline;
+}
+
+.footer-text {
+    padding: 8px 0;
+    display: inline-block;
+    justify-self: center;
+    align-self: center;
+}
+
+a.footer-text:hover {
+    color: #ff5100;
 }
 
 .btn {
     a {
         display: inline-block;
         padding-top: 10px;
-        text-decoration: none;
         font-size: 1.4rem;
         color: white;
         height: inherit;
@@ -163,7 +173,6 @@ div.container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 #active-img {
@@ -180,13 +189,31 @@ div.container {
 }
 
 .git-link {
-    background-color: darkgray;
+    background-color: inherit;
     fill: black;
 }
+
 .git-link:hover {
     fill: #ff5100;
-    
-  }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 50px;
+}
+
+.inner-foot {
+    width: 20%;
+}
+
+.inner-foot ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .github-icon {
     height: 32px;
