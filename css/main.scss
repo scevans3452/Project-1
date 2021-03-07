@@ -242,11 +242,11 @@ footer {
 @keyframes slide-right {
     from {
         opacity: 0;
-        left: 39%;
+        left: 32%;
     }
     to {
         opacity: 1;
-        left: 46%;
+        left: 38%;
     }
 }
 
@@ -284,41 +284,69 @@ footer {
 
 .table-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 table {
+    display: inline-block;
     min-width: 300px;
     border: white solid 1px;
-    margin: 20px 8px 0 8px;
-    flex-grow: 1;
+    margin: 20px 8px;
+    flex: auto;
 }
 
 caption {
+    width: 100%;
+    text-decoration: underline;
     font-weight: bold;
     font-size: 1.3em;
+}
+
+tr {
+    width: 100%;
 }
 
 td, th {
     //border: 1px solid #dddddd;
     text-align: left;
     padding: 3px;
-  }
-.odd {
-    background-color: #eeeeee;
-}
-.even {
-    background-color: white;
 }
 
+th:nth-of-type(1), td:nth-of-type(1) {
+    width: 10%;
+}
+
+th:nth-of-type(2), td:nth-of-type(2) {
+    width: 90%;
+}
+
+th:nth-of-type(3), td:nth-of-type(3) {
+    justify-self: end;
+    text-align: right;
+}
+
+@media (max-width: 1380px) {
+      table {
+          width: 33%;
+      }
+    
+  }
+
 @media (max-width: 800px) {
+
     .table-container {
         flex-direction: column;
         align-items: center;
     }
-    .table-odd, .table-even {
+    table {
         width: 100%;
         margin: 20px 0;
     }
+
+    .hero-content {
+        font-size: 58px;
+    }
+
+
   }

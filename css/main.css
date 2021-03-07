@@ -294,22 +294,22 @@ footer {
 @-webkit-keyframes slide-right {
   from {
     opacity: 0;
-    left: 39%;
+    left: 32%;
   }
   to {
     opacity: 1;
-    left: 46%;
+    left: 38%;
   }
 }
 
 @keyframes slide-right {
   from {
     opacity: 0;
-    left: 39%;
+    left: 32%;
   }
   to {
     opacity: 1;
-    left: 46%;
+    left: 38%;
   }
 }
 
@@ -360,25 +360,32 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 table {
+  display: inline-block;
   min-width: 300px;
   border: white solid 1px;
-  margin: 20px 8px 0 8px;
+  margin: 20px 8px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 caption {
+  width: 100%;
+  text-decoration: underline;
   font-weight: bold;
   font-size: 1.3em;
+}
+
+tr {
+  width: 100%;
 }
 
 td, th {
@@ -386,12 +393,24 @@ td, th {
   padding: 3px;
 }
 
-.odd {
-  background-color: #eeeeee;
+th:nth-of-type(1), td:nth-of-type(1) {
+  width: 10%;
 }
 
-.even {
-  background-color: white;
+th:nth-of-type(2), td:nth-of-type(2) {
+  width: 90%;
+}
+
+th:nth-of-type(3), td:nth-of-type(3) {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  text-align: right;
+}
+
+@media (max-width: 1380px) {
+  table {
+    width: 33%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -404,9 +423,12 @@ td, th {
         -ms-flex-align: center;
             align-items: center;
   }
-  .table-odd, .table-even {
+  table {
     width: 100%;
     margin: 20px 0;
+  }
+  .hero-content {
+    font-size: 58px;
   }
 }
 /*# sourceMappingURL=main.css.map */
