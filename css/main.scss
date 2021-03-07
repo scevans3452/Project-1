@@ -281,3 +281,44 @@ footer {
     animation: slide-left 1.8s 1.7s;
     animation-fill-mode: forwards;
 }
+
+.table-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+table {
+    min-width: 300px;
+    border: white solid 1px;
+    margin: 20px 8px 0 8px;
+    flex-grow: 1;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+td, th {
+    //border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+  }
+.odd {
+    background-color: #eeeeee;
+}
+.even {
+    background-color: white;
+}
+
+@media (max-width: 800px) {
+    .table-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .table-odd, .table-even {
+        width: 100%;
+        margin: 20px 0;
+    }
+  }
