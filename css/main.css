@@ -43,6 +43,9 @@ nav ul {
 }
 
 .nav {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   padding: 20px 25px;
   background-color: #333;
   text-decoration: none;
@@ -95,6 +98,8 @@ h2 {
   width: 78%;
   z-index: 2;
   overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .middle {
@@ -111,8 +116,7 @@ h2 {
   height: 315px;
   width: 100%;
   margin-top: -124px;
-  margin-right: -40px;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .black {
@@ -369,12 +373,12 @@ footer {
 
 table {
   display: inline-block;
-  min-width: 300px;
+  min-width: 245px;
   border: white solid 1px;
   margin: 20px 8px;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 caption {
@@ -407,9 +411,18 @@ th:nth-of-type(3), td:nth-of-type(3) {
   text-align: right;
 }
 
+tr:nth-of-type(2n) {
+  background-color: gray;
+}
+
 @media (max-width: 1200px) {
   .hero-content {
     font-size: 52px;
+  }
+  table {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
   }
 }
 
@@ -424,10 +437,11 @@ th:nth-of-type(3), td:nth-of-type(3) {
             align-items: center;
   }
   table {
-    width: 100%;
-    margin: 20px 0;
+    width: 96%;
+    margin: 2%;
   }
   nav {
+    display: block;
     font-size: 10px;
     top: -5px;
   }
@@ -448,6 +462,11 @@ th:nth-of-type(3), td:nth-of-type(3) {
   .hero-content {
     text-align: right;
     margin-right: 70px;
+  }
+  .top-nav ul li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
