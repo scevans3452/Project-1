@@ -461,6 +461,11 @@ tr:nth-of-type(2n) {
   background-color: gray;
 }
 
+.video {
+  display: block;
+  margin: 20px auto;
+}
+
 @media (max-width: 1200px) {
   .hero-content {
     font-size: 52px;

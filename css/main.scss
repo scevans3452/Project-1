@@ -384,6 +384,12 @@ tr:nth-of-type(2n) {
     background-color: gray;
 }
 
+// NEED TO FIGURE OUT HOW TO STALL LOADING ALL THIS UNTIL THE REST OF THE PAGE HAS LOADED.
+.video {
+    display: block;
+    margin: 20px auto;
+}
+
 @media (max-width: 1200px) {
     .hero-content {
         font-size: 52px;
