@@ -485,6 +485,7 @@ tr:nth-of-type(2n) {
   height: 600px;
   border: 3px solid white;
   padding: 20px;
+  letter-spacing: 2px;
 }
 
 .box-1 p {
@@ -501,6 +502,7 @@ tr:nth-of-type(2n) {
   height: 600px;
   border: 3px solid white;
   padding: 20px;
+  letter-spacing: 2px;
 }
 
 .box-2 div {
@@ -527,7 +529,7 @@ p > span {
 
 .box-image {
   display: block;
-  width: 70%;
+  width: 50%;
 }
 
 @media (max-width: 1200px) {
